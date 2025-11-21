@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <header class="hero">
+        <i class="fas fa-globe globe-icon"></i>
+        <i class="fa-solid fa-folder-open folder-icon"></i>
+        <i class="fa-solid fa-laptop-code laptop-icon"></i>
+        <i class="fa-solid fa-mobile-screen-button mobile-icon"></i>
+        <i class="fa-solid fa-palette palette-icon"></i>
+        <div class="hero-box">
+            <div class="hero-content">
+                <h1><HEad>Hey, I am Veljko</HEad>!</h1>
+                <p>Web Developer | Designer</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/veljkotomicc7" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@veljkotomic_" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="mailto:tomicveljko77@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="scroll-indicator" id="scrollIndicator">
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me -->
+    <section id="about" class="about">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+
+        <h2 data-aos="fade-up">About Me</h2>
+        <p data-aos="fade-up" class="text"> I’m passionate about building modern, clean, and responsive websites.
+            Feel free to contact me if you’re looking for a creative collaboration,
+            whether it’s a personal portfolio, business website, or a unique project idea.
+            Together, we can bring your vision to life.</p>
+    </section>
+
+    <!-- Offers -->
+    <section id="offers" data-aos="fade-up">
+        <h2>💼 My Offers</h2>
+        <div class="offers-container">
+
+            <div class="offer-box">
+                <h3>🌐 Website Development</h3>
+                <p> I build modern, fast, and secure websites tailored to your needs.
+                    From simple portfolio sites to fully functional business platforms,
+                    I focus on clean code, performance, and long-term reliability.</p>
+            </div>
+
+            <div class="offer-box">
+                <h3>📱 Mobile-Responsive Design</h3>
+                <p> Your website will look and work perfectly on any device – desktop,
+                    tablet, or smartphone. With mobile-first design, I make sure visitors
+                    have a smooth experience wherever they are.</p>
+            </div>
+
+            <div class="offer-box">
+                <h3>🎨 UI/UX Design</h3>
+                <p> I design intuitive and engaging user interfaces with a strong focus
+                    on usability and aesthetics. Every button, color, and layout choice
+                    is made to improve the user journey and keep visitors interested.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2 data-aos="fade-up">Contact Me</h2>
+        <form id="contactForm" data-aos="fade-up" data-aos-delay="200">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="mylogo">
+                <img class="logo" src="/easy/pics/Skjermbilde 2025-11-09 101438.png" alt="">
+                <h2>Veljko Tomic</h2>
+            </div>
+            <nav class="footer-nav">
+                <a href="#about">About Me</a>
+                <a href="#offers">Offers</a>
+                <a href="#projects">My Projects</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>© Created by Veljko Tomic | All rights Reserved</p>
+            <div class="f-socials">
+                <div>
+                    <a href="https://instagram.com/veljkotomicc7" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@veljkotomic_" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="mailto:tomicveljko77@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html>
