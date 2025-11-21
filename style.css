@@ -17,7 +17,11 @@ header {
     width: 30%;
     display: flex;
     justify-content: space-around;
-} */
+} 
+    
+10425c dark blue
+41E2CC light blue
+*/
 
 /* Reset */
 
@@ -37,7 +41,8 @@ body {
 
 .hero {
     height: 90vh;
-    background: linear-gradient(135deg, #3f3b00, #d9d200);
+    /*background: linear-gradient(135deg, #3f3b00, #d9d200);*/
+    background-color: #41E2CC;
     color: #f8f9fa;
     display: flex;
     flex-direction: column;
@@ -86,7 +91,8 @@ body {
     top: 5vh;
     position: relative;
     z-index: 3;
-    background: rgb(1 21 48);
+    /*background: rgb(1 21 48);*/
+    background: #10425c;
     padding: 2rem 3rem;
     border-radius: 12px;
     max-width: 600px;
@@ -380,8 +386,8 @@ button:hover {
 footer {
     width: 100%;
     height: 40vh;
-    background-color: rgb(1 21 48);
-    color: #d9d200;
+    background-color: #10425c;
+    color: #41E2CC;
     padding: 2%;
 }
 
