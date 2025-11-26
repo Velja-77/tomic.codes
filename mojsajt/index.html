@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="menu" id="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <nav id="nav-menu">
+            <a href="#about">About Me |</a>
+            <a href="#pricing">Pricing |</a>
+            <a href="#contact">Contact |</a>
+            <a href="#portfolio">[Portfolio in progress]</a>
+        </nav>
+        <img class="header-logo" src="pics/logo.png" alt="">
+    </header>
+    <div class="hero">
+        <div class="hero-box">
+            <div class="hero-content">
+                <h1>Web development with precision and clarity.</h1>
+                <p>Web Developer | Designer</p>
+                <img class="hero-logo" src="pics/logo.png" alt="">
+                <p>Tomic Codes</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/veljkotomicc7" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@veljkotomic_" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="mailto:tomicveljko77@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="scroll-indicator" id="scrollIndicator">
+                    <div class="arrow"><i class="fa-solid fa-chevron-down arrow"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me -->
+    <section id="about" class="about">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+
+        <div class="aboutText" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p class="text"> I build clean, fast, and user-friendly websites designed to help your business look
+                professional and convert customers. Simple design, clean code, and a great user experience.</p>
+        </div>
+    </section>
+
+    <section id="pricing" data-aos="fade-up">
+        <h2 class="pricing-title">Pricing</h2>
+        <div class="offers-container">
+
+            <div class="offer-box">
+                <h2>Basic</h2>
+                <p>
+                    One-time website build: 2,000 NOK<br>
+                    1–3 pages, responsive design, clean layout<br>
+                    Mobile-friendly & user-friendly<br>
+                    Monthly plan: 500 NOK/month (hosting, domain, updates, security)<br>
+                    Ideal for small personal or business websites
+                </p>
+            </div>
+
+            <div class="offer-box">
+                <h2>Standard</h2>
+                <p>
+                    One-time website build: 4,000 NOK<br>
+                    3–5 pages, custom layout, contact form<br>
+                    Responsive & fast design<br>
+                    Monthly plan: 700 NOK/month (hosting, domain, updates, security)<br>
+                    Perfect for growing businesses and professional sites
+                </p>
+            </div>
+
+            <div class="offer-box">
+                <h2>Premium</h2>
+                <p>
+                    One-time website build: 6,500 NOK<br>
+                    5+ pages, CMS, SEO basics included<br>
+                    Fully responsive, modern, and secure<br>
+                    Monthly plan: 1,000 NOK/month (hosting, domain, updates, security, basic SEO)<br>
+                    Best for businesses that want a full-featured, professional website
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2 data-aos="fade-up">Contact Me</h2>
+        <form id="contactForm" data-aos="fade-up" data-aos-delay="200">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img class="logo" src="/pics/logo.png" alt="">
+                <h2>Tomic Codes</h2>
+            </div>
+            <nav class="footer-nav">
+                <a href="#about">About Me</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+                <!--<a href="#portfolio">Portfolio</a>-->
+            </nav>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p class="c-text">© Created by Tomic Codes | All rights Reserved</p>
+            <div class="f-socials">
+                <div>
+                    <a href="https://instagram.com/veljkotomicc7" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@veljkotomic_" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="mailto:tomicveljko77@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html>
