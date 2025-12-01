@@ -8,73 +8,164 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script type="module" src="script.js"></script>
 </head>
 
 <body>
-    <header class="hero">
-        <i class="fas fa-globe globe-icon"></i>
-        <i class="fa-solid fa-folder-open folder-icon"></i>
-        <i class="fa-solid fa-laptop-code laptop-icon"></i>
-        <i class="fa-solid fa-mobile-screen-button mobile-icon"></i>
-        <i class="fa-solid fa-palette palette-icon"></i>
+    <header>
+        <div class="menu" id="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <nav id="nav-menu">
+            <a href="#about">About Me</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+            <a href="#portfolio">[Portfolio in progress]</a>
+        </nav>
+        <img class="header-logo" src="pics/logo.png" alt="">
+    </header>
+    <div class="hero">
         <div class="hero-box">
             <div class="hero-content">
-                <h1><HEad>Hey, I am Veljko</HEad>!</h1>
+                <h1>Web development with precision and clarity.</h1>
                 <p>Web Developer | Designer</p>
+                <img class="hero-logo" src="pics/logo.png" alt="">
+                <p>Tomic Codes</p>
                 <div class="social-icons">
                     <a href="https://instagram.com/veljkotomicc7" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.tiktok.com/@veljkotomic_" target="_blank"><i class="fab fa-tiktok"></i></a>
                     <a href="mailto:tomicveljko77@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
                 <div class="scroll-indicator" id="scrollIndicator">
-                    <div class="arrow"></div>
+                    <div class="arrow"><i class="fa-solid fa-chevron-down arrow"></i></div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
     <!-- About Me -->
     <section id="about" class="about">
-        <div class="blob blob1"></div>
+        <!---<div class="blob blob1"></div>
         <div class="blob blob2"></div>
-        <div class="blob blob3"></div>
+        <div class="blob blob3"></div> --->
 
-        <h2 data-aos="fade-up">About Me</h2>
-        <p data-aos="fade-up" class="text"> I’m passionate about building modern, clean, and responsive websites.
-            Feel free to contact me if you’re looking for a creative collaboration,
-            whether it’s a personal portfolio, business website, or a unique project idea.
-            Together, we can bring your vision to life.</p>
+        <div class="aboutText" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p class="text"> I build clean, fast, and user-friendly websites designed to help your business look
+                professional and convert customers. Simple design, clean code, and a great user experience.</p>
+        </div>
     </section>
 
-    <!-- Offers -->
-    <section id="offers" data-aos="fade-up">
-        <h2>💼 My Offers</h2>
+    <!--    <section id="pricing" data-aos="fade-up">
+        <h2 class="pricing-title">Pricing</h2>
         <div class="offers-container">
 
             <div class="offer-box">
-                <h3>🌐 Website Development</h3>
-                <p> I build modern, fast, and secure websites tailored to your needs.
-                    From simple portfolio sites to fully functional business platforms,
-                    I focus on clean code, performance, and long-term reliability.</p>
+                <h2>Basic</h2>
+                <p>
+                    One-time website build: 2,000 NOK<br>
+                    1–3 pages, responsive design, clean layout<br>
+                    Mobile-friendly & user-friendly<br>
+                    Monthly plan: 500 NOK/month (hosting, domain, updates, security)<br>
+                    Ideal for small personal or business websites
+                </p>
             </div>
 
             <div class="offer-box">
-                <h3>📱 Mobile-Responsive Design</h3>
-                <p> Your website will look and work perfectly on any device – desktop,
-                    tablet, or smartphone. With mobile-first design, I make sure visitors
-                    have a smooth experience wherever they are.</p>
+                <h2>Standard</h2>
+                <p>
+                    One-time website build: 4,000 NOK<br>
+                    3–5 pages, custom layout, contact form<br>
+                    Responsive & fast design<br>
+                    Monthly plan: 700 NOK/month (hosting, domain, updates, security)<br>
+                    Perfect for growing businesses and professional sites
+                </p>
             </div>
 
             <div class="offer-box">
-                <h3>🎨 UI/UX Design</h3>
-                <p> I design intuitive and engaging user interfaces with a strong focus
-                    on usability and aesthetics. Every button, color, and layout choice
-                    is made to improve the user journey and keep visitors interested.</p>
+                <h2>Premium</h2>
+                <p>
+                    One-time website build: 6,500 NOK<br>
+                    5+ pages, CMS, SEO basics included<br>
+                    Fully responsive, modern, and secure<br>
+                    Monthly plan: 1,000 NOK/month (hosting, domain, updates, security, basic SEO)<br>
+                    Best for businesses that want a full-featured, professional website
+                </p>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="pricing" data-aos="fade-up">
+        <h2 class="pricing-title">Choose Your Plan</h2>
+
+        <div class="offers-container">
+
+            <!-- Basic Package -->
+            <div class="offer-box">
+                <h3><i class="fa-regular fa-circle-dot"></i> Basic</h3>
+                <div class="title-underline"></div>
+                <ul>
+                    <li>1–3 pages</li>
+                    <li>Responsive & clean design</li>
+                    <li>Mobile-friendly</li>
+                </ul>
+                <div class="offer-bottom">
+                    <p><strong>Starting at 2,000 NOK</strong></p>
+                    <button onclick="location.href='#contact'">Contact me</button>
+                </div>
+            </div>
+
+            <!-- Standard Package -->
+            <div class="offer-box">
+                <h3><i class="fa-solid fa-wrench"></i> Standard</h3>
+                <div class="title-underline"></div>
+                <ul>
+                    <li>3–5 pages</li>
+                    <li>Custom layout + contact form</li>
+                    <li>Basic SEO included</li>
+                </ul>
+                <div class="offer-bottom">
+                    <p><strong>Starting at 4,000 NOK</strong></p>
+                    <button onclick="location.href='#contact'">Contact me</button>
+                </div>
+            </div>
+
+            <!-- Premium Package -->
+            <div class="offer-box">
+                <h3><i class="fa-solid fa-crown"></i> Premium</h3>
+                <div class="title-underline"></div>
+                <ul>
+                    <li>5+ pages</li>
+                    <li>CMS + SEO basics</li>
+                    <li>Full business features</li>
+                </ul>
+                <div class="offer-bottom">
+                    <p><strong>Starting at 6,500 NOK</strong></p>
+                    <button onclick="location.href='#contact'">Contact me</button>
+                </div>
+            </div>
+
+            <!-- Custom Package -->
+            <div class="offer-box custom-package">
+                <h3><i class="fa-solid fa-puzzle-piece"></i> Custom</h3>
+                <div class="title-underline"></div>
+                <ul>
+                    <li>Tailored solutions</li>
+                    <li>Booking systems, menus, or unique features</li>
+                    <li>Optimized for your business needs</li>
+                </ul>
+                <div class="offer-bottom">
+                    <p><strong>Price: Contact for quote</strong></p>
+                    <button onclick="location.href='#contact'">Contact me</button>
+                </div>
             </div>
 
         </div>
     </section>
+
 
     <!-- Contact -->
     <section id="contact" class="contact">
@@ -89,21 +180,20 @@
 
     <footer>
         <div class="footer-content">
-            <div class="mylogo">
+            <div class="footer-logo">
                 <img class="logo" src="/pics/logo.png" alt="">
-                <h2>Veljko Tomic</h2>
+                <h2>Tomic Codes</h2>
             </div>
             <nav class="footer-nav">
                 <a href="#about">About Me</a>
-                <a href="#offers">Offers</a>
-                <a href="#projects">My Projects</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#contact">Contact</a>
+                <!--<a href="#portfolio">Portfolio</a>-->
             </nav>
         </div>
         <hr>
         <div class="copyright">
-            <p>© Created by Veljko Tomic | All rights Reserved</p>
+            <p class="c-text">© Created by Tomic Codes | All rights Reserved</p>
             <div class="f-socials">
                 <div>
                     <a href="https://instagram.com/veljkotomicc7" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -114,7 +204,6 @@
         </div>
     </footer>
 
-    <script type="module" src="script.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

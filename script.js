@@ -39,15 +39,31 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
     }
 });
 
-  const scrollIndicator = document.getElementById('scrollIndicator');
+const scrollIndicator = document.getElementById('scrollIndicator');
 
-  // Fade out on scroll
-  window.addEventListener('scroll', () => {
-    scrollIndicator.style.opacity = '0';
-  });
+// Fade out on scroll
+window.addEventListener('scroll', () => {
+  scrollIndicator.style.opacity = '0';
+});
 
-  // Fade out on click
-  scrollIndicator.addEventListener('click', () => {
-    scrollIndicator.style.opacity = '0';
-    window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
-  });
+// Fade out on click
+scrollIndicator.addEventListener('click', () => {
+  scrollIndicator.style.opacity = '0';
+  window.scrollBy({ top: window.innerHeight *0.9, behavior: 'smooth' });
+});
+
+const menu = document.getElementById('menu');
+const navMenu = document.querySelector('header nav');
+const navLinks = document.querySelectorAll('#nav-menu a');
+
+menu.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+    menu.classList.toggle('active');
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+        menu.classList.remove('active');
+    });
+});
