@@ -1,4 +1,4 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+/* import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 // Your Firebase config (from Firebase Console)
@@ -10,11 +10,11 @@ const firebaseConfig = {
     messagingSenderId: "24446470401",
     appId: "1:24446470401:web:8379b7f0f05d0132b27300",
     measurementId: "G-Q2WL6CVMFV"
-};
+}; 
 
 // Init
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+const db = getFirestore(app); 
 
 // Handle form submit
 document.getElementById("contactForm").addEventListener("submit", async (e) => {
@@ -37,7 +37,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
         console.error("Error saving message: ", error);
         alert("❌ Something went wrong.");
     }
-});
+}); */
 
 const scrollIndicator = document.getElementById('scrollIndicator');
 
@@ -67,3 +67,5 @@ navLinks.forEach(link => {
         menu.classList.remove('active');
     });
 });
+
+document.getElementById("year").textContent = new Date().getFullYear();
