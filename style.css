@@ -249,41 +249,6 @@ header img {
     flex-direction: column;
 }
 
-/* Soft blob shapes */
-.blob {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.6;
-    animation: float 10s ease-in-out infinite;
-}
-
-.blob1 {
-    width: 250px;
-    height: 250px;
-    background: linear-gradient(135deg, #10425c, #41E2CC);
-    top: 10%;
-    left: 10%;
-    animation-delay: 0s;
-}
-
-.blob2 {
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(135deg, #10425c, #41E2CC);
-    top: 50%;
-    right: 9%;
-    animation-delay: 3s;
-}
-
-.blob3 {
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(135deg, #10425c, #41E2CC);
-    top: 70%;
-    right: 20%;
-    animation-delay: 6s;
-}
-
 #pricing {
     background: linear-gradient(135deg, #0E3647, #2BCAB3);
     font-family: Roboto;
@@ -357,7 +322,16 @@ header img {
     margin-top: auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
+}
+
+.price {
+    font-size: 1.1rem;
+}
+
+.price-alt {
+    font-size: 0.85rem;
+    color: #9faeb3;
 }
 
 .offer-box button {
